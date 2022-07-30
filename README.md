@@ -16,6 +16,9 @@ An end to end, scalable data-pipeline.
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> 
 <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> 
 <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a height="40"/> </a> 
+
+
+
 <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a  
 <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> 
@@ -32,6 +35,9 @@ This README documents the actions taken and decisions made during each step of t
 
 ## Milestone 1 - Decide Target Website
 Chose 'https://www.bbcgoodfood.com' to scrape due to the amount of different types of data on the website. The Recipes sectors is very large and data insights could help maximise recipes.
+
+![](https://user-images.githubusercontent.com/104097352/182002946-754af632-d87d-4c97-ae17-ec0594016aa1.png)
+
 
 ## Milestone 2 - Prototype Finding Target Pages
 Environment set up and creating an initial scraper using Selenium to load a webpage and navigate through it to obtain the URLS of pages with the desired information. Classe were created: the scraper class containing the methods (each doing on task) to obtain the urls of the first n (user decision) recipes pages in each category.
@@ -50,6 +56,8 @@ This milestone has allowed me to understand some of the developer benefits of en
 
 ## Milestone 5 - Scalably Store the Data
 Sets up AWS to save image data to S3 bucket and tabular data to a PostgreSQL database on the cloud. Code was updated to implement an AWS port in its own class, and the Scraper methods were updated to save to the cloud rather than locally. Scraper runs successfully with data saving to the cloud. 
+![](https://user-images.githubusercontent.com/104097352/182003311-5e7ef1d2-23d9-46ce-bbdc-f1de8fc527ee.png)
+![](https://user-images.githubusercontent.com/104097352/182003041-d7c27166-d19b-4061-92fa-46087687e62c.png)
 
 ## Milestone 6 - Getting More Data
 Updates methods to ensure duplicate images are not being scraped from the website. It was deemed un-scalable to store slug names/access the database to prevent the tabular data being scraped for duplicate recipes, however, additional functionality has been added to prevent duplicate recipes data being saved to the database. Tests have been updated for the new functionality.
@@ -58,6 +66,11 @@ Updates methods to ensure duplicate images are not being scraped from the websit
 Containerised the scraper application using Docker to create a Dcoker Image which was pushed to DockerHub. To run the scraper remote, an EC2 instance was created, which was connected to the S3 bucket and RDS PostgreSQL database. Care was taken around ensuring security group allowed access to the database from the EC2 instance only (rather than from localhost as set up previously). As part of this, used GitHub secrets for authentication credentials to ensure these were not comitted in the code and accidentally made public, posing a security risk.
 
 This milestone has given me practice working with AWS and the start of productionising code.
+![](https://user-images.githubusercontent.com/104097352/182003071-b0502eed-0302-4c47-aa7d-003fc2168ea5.png)
+![](https://user-images.githubusercontent.com/104097352/182003076-ca88ee49-bd6f-4446-9393-a4b20fb6762f.png)
+![](https://user-images.githubusercontent.com/104097352/182003102-3ae55e91-850a-4056-b8fc-ddfa68bc677e.png)
+![](https://user-images.githubusercontent.com/104097352/182003115-b02fee0b-cee3-4b12-8e6f-65cbcaffedf8.png)
+
 
 
 ## Milestone 8 - Monitoring and Alerting
