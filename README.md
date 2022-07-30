@@ -1,4 +1,4 @@
-# data-collection-pipeline
+# Data Collection Pipeline
 An end to end, scalable data-pipeline. 
 
 ![UML Diagram Data Collection](https://user-images.githubusercontent.com/89411656/177179636-8eadff3f-8bed-4251-a29d-ea2b16a9a6c6.jpg)
