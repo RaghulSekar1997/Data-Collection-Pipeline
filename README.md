@@ -24,14 +24,14 @@ An end to end, scalable data-pipeline.
 <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> </p>
 
 
-AiCore project to learn about data collection pipelines using web scraping example. The website chosen was 'https://www.bbc.co.uk/food'.
+AiCore project to learn about data collection pipelines using web scraping example. The website chosen was 'https://www.bbcgoodfood.com'.
 
 This README documents the actions taken and decisions made during each step of the project.
 
 
 
 ## Milestone 1 - Decide Target Website
-Chose 'https://www.bbc.co.uk/food' to scrape due to the amount of different types of data on the website. The Recipes sectors is very large and data insights could help maximise recipes.
+Chose 'https://www.bbcgoodfood.com' to scrape due to the amount of different types of data on the website. The Recipes sectors is very large and data insights could help maximise recipes.
 
 ## Milestone 2 - Prototype Finding Target Pages
 Environment set up and creating an initial scraper using Selenium to load a webpage and navigate through it to obtain the URLS of pages with the desired information. Classe were created: the scraper class containing the methods (each doing on task) to obtain the urls of the first n (user decision) recipes pages in each category.
