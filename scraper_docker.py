@@ -28,8 +28,8 @@ class Scraper:
         s = ChromiumService(ChromeDriverManager().install())
 
 
-        self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager().install()), options=chrome_options)
-        # self.driver = webdriver.Chrome(service=s,options=options)
+        # self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager().install()), options=chrome_options)
+        self.driver = webdriver.Chrome(service=s,options=options)
         # self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()),options=options)
 
         # self.driver = webdriver.Chrome() 
