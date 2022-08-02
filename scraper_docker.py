@@ -21,6 +21,7 @@ class Scraper:
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         
+       
         s = ChromiumService(ChromeDriverManager().install())
 
 
@@ -29,7 +30,7 @@ class Scraper:
         # self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()),options=options)
 
         # self.driver = webdriver.Chrome() 
-        # self.driver.maximize_window()
+        self.driver.maximize_window()
         self.driver.get(url)
         time.sleep(3)
         
