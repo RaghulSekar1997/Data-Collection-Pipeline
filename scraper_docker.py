@@ -17,7 +17,12 @@ class Scraper:
 
         options = Options()
         options.add_argument('--headless')
-        self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()),options=options)
+        s = ChromiumService(ChromeDriverManager().install())
+
+
+
+        self.driver = webdriver.Chrome(service=s,options=options)
+        # self.driver = webdriver.Chrome(service=ChromiumService(ChromeDriverManager(chrome_type=ChromeType.CHROMIUM).install()),options=options)
 
         # self.driver = webdriver.Chrome() 
         self.driver.maximize_window()
