@@ -49,6 +49,8 @@ RUN pip install -U selenium
 
 RUN pip install -U webdriver_manager
 
+ENV DISPLAY=:99
+
 RUN pip install -r ./requirements.txt
 
 
