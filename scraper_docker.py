@@ -9,7 +9,7 @@ from selenium.webdriver.chrome.options import Options
 import sys
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromiumService
-# from webdriver_manager.core.utils import ChromeType
+
 
 
 class Scraper:
