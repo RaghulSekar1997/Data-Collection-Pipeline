@@ -56,19 +56,36 @@ This milestone has allowed me to understand some of the developer benefits of en
 
 ## Milestone 5 - Scalably Store the Data
 Sets up AWS to save image data to S3 bucket and tabular data to a PostgreSQL database on the cloud. Code was updated to implement an AWS port in its own class, and the Scraper methods were updated to save to the cloud rather than locally. Scraper runs successfully with data saving to the cloud. 
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003311-5e7ef1d2-23d9-46ce-bbdc-f1de8fc527ee.png)
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003041-d7c27166-d19b-4061-92fa-46087687e62c.png)
+
 
 ## Milestone 6 - Getting More Data
 Updates methods to ensure duplicate images are not being scraped from the website. It was deemed un-scalable to store slug names/access the database to prevent the tabular data being scraped for duplicate recipes, however, additional functionality has been added to prevent duplicate recipes data being saved to the database. Tests have been updated for the new functionality.
 
 ## Milestone 7 - Containerise Scraper and Run on Cloud Server
-Containerised the scraper application using Docker to create a Dcoker Image which was pushed to DockerHub. To run the scraper remote, an EC2 instance was created, which was connected to the S3 bucket and RDS PostgreSQL database. Care was taken around ensuring security group allowed access to the database from the EC2 instance only (rather than from localhost as set up previously). As part of this, used GitHub secrets for authentication credentials to ensure these were not comitted in the code and accidentally made public, posing a security risk.
+Containerised the scraper application using Docker to create a Dcoker Image which was pushed to DockerHub. 
+
+![](https://user-images.githubusercontent.com/104097352/182265928-267b54cf-4c1c-40f9-8196-9bd19a2ba11d.png)
+
+To run the scraper remote, an EC2 instance was created, which was connected to the S3 bucket and RDS PostgreSQL database. Care was taken around ensuring security group allowed access to the database from the EC2 instance only (rather than from localhost as set up previously). As part of this, used GitHub secrets for authentication credentials to ensure these were not comitted in the code and accidentally made public, posing a security risk.
 
 This milestone has given me practice working with AWS and the start of productionising code.
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003071-b0502eed-0302-4c47-aa7d-003fc2168ea5.png)
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003076-ca88ee49-bd6f-4446-9393-a4b20fb6762f.png)
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003102-3ae55e91-850a-4056-b8fc-ddfa68bc677e.png)
+
+
 ![](https://user-images.githubusercontent.com/104097352/182003115-b02fee0b-cee3-4b12-8e6f-65cbcaffedf8.png)
 
 
