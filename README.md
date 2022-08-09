@@ -36,7 +36,7 @@ This README documents the actions taken and decisions made during each step of t
 ## Milestone 1 - Decide Target Website
 Chose 'https://www.bbcgoodfood.com' to scrape due to the amount of different types of data on the website. The Recipes sectors is very large and data insights could help maximise recipes.
 
-![](https://user-images.githubusercontent.com/104097352/182002946-754af632-d87d-4c97-ae17-ec0594016aa1.png)
+ ![](https://user-images.githubusercontent.com/104097352/182002946-754af632-d87d-4c97-ae17-ec0594016aa1.png)
 
 
 ## Milestone 2 - Prototype Finding Target Pages
