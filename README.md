@@ -77,7 +77,7 @@ To run the scraper remote, an EC2 instance was created, which was connected to t
 This milestone has given me practice working with AWS and the start of productionising code.
 
 
- ![](https://user-images.githubusercontent.com/104097352/182003071-b0502eed-0302-4c47-aa7d-003fc2168ea5.png)
+![](https://user-images.githubusercontent.com/104097352/182003071-b0502eed-0302-4c47-aa7d-003fc2168ea5.png)
 
 
 ![](https://user-images.githubusercontent.com/104097352/182003076-ca88ee49-bd6f-4446-9393-a4b20fb6762f.png)
